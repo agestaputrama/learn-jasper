@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fontFamilies>
+
+    <fontFamily name="Open Sans">
+        <normal><![CDATA[fonts/OpenSans-Regular.ttf]]></normal>
+        <bold><![CDATA[fonts/OpenSans-Bold.ttf]]></bold>
+        <italic><![CDATA[fonts/OpenSans-Italic.ttf]]></italic>
+        <boldItalic><![CDATA[fonts/OpenSans-BoldItalic.ttf]]></boldItalic>
+        <pdfEncoding><![CDATA[Identity-H]]></pdfEncoding>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+    </fontFamily>
+
+    <fontFamily name="Nunito">
+        <normal><![CDATA[fonts/Nunito-Regular.ttf]]></normal>
+        <bold><![CDATA[fonts/Nunito-Bold.ttf]]></bold>
+        <italic><![CDATA[fonts/Nunito-Italic.ttf]]></italic>
+        <boldItalic><![CDATA[fonts/Nunito-BoldItalic.ttf]]></boldItalic>
+        <pdfEncoding><![CDATA[Identity-H]]></pdfEncoding>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+    </fontFamily>
+
+    <fontFamily name="Montserrat">
+        <normal><![CDATA[fonts/Montserrat-Regular.ttf]]></normal>
+        <bold><![CDATA[fonts/Montserrat-Bold.ttf]]></bold>
+        <italic><![CDATA[fonts/Montserrat-Italic.ttf]]></italic>
+        <boldItalic><![CDATA[fonts/Montserrat-BoldItalic.ttf]]></boldItalic>
+        <pdfEncoding><![CDATA[Identity-H]]></pdfEncoding>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+    </fontFamily>
+
+</fontFamilies>

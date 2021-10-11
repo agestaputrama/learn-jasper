@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_Landscape" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="39be180d-3aea-4701-8672-d94ec5220bd2">
+    <property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+    <style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+        <box>
+            <pen lineWidth="0.5" lineColor="#000000"/>
+            <topPen lineWidth="0.5" lineColor="#000000"/>
+            <leftPen lineWidth="0.5" lineColor="#000000"/>
+            <bottomPen lineWidth="0.5" lineColor="#000000"/>
+            <rightPen lineWidth="0.5" lineColor="#000000"/>
+        </box>
+    </style>
+    <style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+        <box>
+            <pen lineWidth="0.5" lineColor="#000000"/>
+            <topPen lineWidth="0.5" lineColor="#000000"/>
+            <leftPen lineWidth="0.5" lineColor="#000000"/>
+            <bottomPen lineWidth="0.5" lineColor="#000000"/>
+            <rightPen lineWidth="0.5" lineColor="#000000"/>
+        </box>
+    </style>
+    <style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+        <box>
+            <pen lineWidth="0.5" lineColor="#000000"/>
+            <topPen lineWidth="0.5" lineColor="#000000"/>
+            <leftPen lineWidth="0.5" lineColor="#000000"/>
+            <bottomPen lineWidth="0.5" lineColor="#000000"/>
+            <rightPen lineWidth="0.5" lineColor="#000000"/>
+        </box>
+    </style>
+    <subDataset name="Dataset1" uuid="581ebd20-7130-4239-9063-1cd9f1650173">
+        <property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+        <queryString>
+            <![CDATA[]]>
+        </queryString>
+        <field name="first" class="java.lang.String"/>
+        <field name="middle" class="java.lang.String"/>
+        <field name="last" class="java.lang.String"/>
+    </subDataset>
+    <parameter name="CollectionBeanParameter" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+    <queryString>
+        <![CDATA[]]>
+    </queryString>
+    <field name="satu" class="java.lang.String"/>
+    <field name="dua" class="java.lang.String"/>
+    <field name="tiga" class="java.lang.String"/>
+    <detail>
+        <band height="500" splitType="Stretch">
+            <staticText>
+                <reportElement x="18" y="15" width="100" height="14" uuid="b0c0dd0f-e38d-4121-a97e-e6e19c993cee"/>
+                <textElement>
+                    <font fontName="Open Sans" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Laporan Transaksi]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="18" y="37" width="100" height="15" forecolor="#858383" uuid="be43b164-5e8c-436d-9321-8b1143d75c6b">
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <textElement>
+                    <font fontName="Open Sans" size="9"/>
+                </textElement>
+                <textFieldExpression><![CDATA["7 Oktober 2021"]]></textFieldExpression>
+            </textField>
+            <image>
+                <reportElement x="690" y="7" width="79" height="37" uuid="89ab40d5-93ed-47d5-ae9e-166282b2986a"/>
+                <imageExpression><![CDATA["C:/Users/C090821002/Pictures/mandiri.png"]]></imageExpression>
+            </image>
+            <staticText>
+                <reportElement x="18" y="52" width="100" height="15" forecolor="#858383" uuid="e9697d90-c6b8-47a9-8928-461bffcae9cb">
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <textElement>
+                    <font fontName="Open Sans" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[WAKTU CETAK 	  : ]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="107" y="53" width="100" height="15" forecolor="#858383" uuid="497214a9-d541-4c30-8437-a85af8a30069">
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <textElement>
+                    <font fontName="Open Sans" size="8" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{satu}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="18" y="75" width="104" height="16" forecolor="#858383" uuid="633fa6b6-a31f-4698-ab2f-7763f22b7f27">
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <textElement>
+                    <font fontName="Open Sans" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[TIPE TRANSAKSI 	  : ]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="107" y="76" width="100" height="15" forecolor="#858383" uuid="37bc1b28-68df-4eb3-9ec0-97cedadebf3c">
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <textElement>
+                    <font fontName="Open Sans" size="8" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{tiga}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="18" y="63" width="104" height="15" forecolor="#858383" uuid="2d9c761e-1bf1-4cdd-b42c-cc7fb93cd337">
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <textElement>
+                    <font fontName="Open Sans" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[CABANG		  : ]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="107" y="64" width="164" height="15" forecolor="#858383" uuid="0053e83b-38d2-48ef-bff4-b96a10dbc071">
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <textElement>
+                    <font fontName="Open Sans" size="8" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{dua}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="18" y="88" width="90" height="15" forecolor="#858383" uuid="fa951449-84e9-4426-9272-ec01f1a3febf">
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <textElement>
+                    <font fontName="Open Sans" size="8" isBold="true"/>
+                </textElement>
+                <text><![CDATA[STATUS TRANSAKSI    :]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="108" y="88" width="100" height="15" forecolor="#858383" uuid="6b77d4d1-cacc-4581-89b7-ce53192e9f4d">
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <textElement>
+                    <font fontName="Open Sans" size="8" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA["SEMUA STATUS"]]></textFieldExpression>
+            </textField>
+            <line>
+                <reportElement mode="Transparent" x="18" y="107" width="740" height="1" forecolor="#ABA6A6" uuid="2fd38750-0922-4d17-a3a8-d7e0ac64e61f">
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                </reportElement>
+            </line>
+            <line>
+                <reportElement mode="Transparent" x="18" y="177" width="740" height="1" forecolor="#ABA6A6" uuid="c1c5b439-c1a3-497c-a9d7-ea123c73b5fa">
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                </reportElement>
+            </line>
+            <line>
+                <reportElement mode="Transparent" x="400" y="107" width="1" height="70" forecolor="#ABA6A6" uuid="fae9b438-e6d0-4d97-882c-82bbf6d95780">
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                </reportElement>
+            </line>
+            <staticText>
+                <reportElement x="44" y="116" width="100" height="30" forecolor="#0057E7" uuid="01adeadd-f143-45fc-aba5-e0da09cf6b9b"/>
+                <textElement>
+                    <font fontName="Nunito"/>
+                </textElement>
+                <text><![CDATA[Total Transaksi Kredit]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="39" y="136" width="361" height="34" uuid="3d9c4baa-3bee-41c2-944a-9315ea2b7c2e"/>
+                <textElement>
+                    <font fontName="Montserrat" size="19" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA["RP 150.000.000.000,00"]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="428" y="116" width="100" height="30" forecolor="#0057E7" uuid="909840d5-4392-430e-bcb1-2ec4c9a6234d"/>
+                <textElement>
+                    <font fontName="Nunito"/>
+                </textElement>
+                <text><![CDATA[Total Transaksi Debet]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="423" y="136" width="345" height="34" uuid="cc07c5b3-49a7-4f77-9ce3-2a966c579d2d"/>
+                <textElement>
+                    <font fontName="Montserrat" size="19" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA["RP 150.000.000.000,00"]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="44" y="184" width="100" height="30" forecolor="#0057E7" uuid="280cb4db-2aae-42f8-b08b-333d4b4affaf"/>
+                <textElement>
+                    <font fontName="Nunito"/>
+                </textElement>
+                <text><![CDATA[Posisi Nett]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="39" y="204" width="361" height="34" uuid="a22e96ec-3e6f-4662-af90-c1a1910e59b7"/>
+                <textElement>
+                    <font fontName="Montserrat" size="19" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA["RP 150.000.000.000,00"]]></textFieldExpression>
+            </textField>
+            <componentElement>
+                <reportElement x="18" y="246" width="741" height="63" uuid="04e7213e-e786-45c7-a858-db62652e40f8">
+                    <property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+                    <property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+                    <property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+                    <property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+                    <datasetRun subDataset="Dataset1" uuid="01170a49-c5c8-43b1-9210-6b7dead63e55">
+                        <dataSourceExpression><![CDATA[$P{CollectionBeanParameter}]]></dataSourceExpression>
+                    </datasetRun>
+                    <jr:column width="59" uuid="cf384ebe-b293-4bc5-a76c-062651966504">
+                        <property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+                        <jr:tableHeader style="Table_TH" height="45" rowSpan="1">
+                            <box>
+                                <pen lineWidth="0.25" lineColor="#D1CDCD"/>
+                                <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                            </box>
+                            <staticText>
+                                <reportElement x="0" y="0" width="59" height="45" forecolor="#0057E7" uuid="f4646940-3055-4553-abab-5731176eb18d"/>
+                                <box>
+                                    <topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                </box>
+                                <textElement textAlignment="Left" verticalAlignment="Middle">
+                                    <font fontName="Nunito"/>
+                                </textElement>
+                                <text><![CDATA[Kode Transaksi]]></text>
+                            </staticText>
+                        </jr:tableHeader>
+                        <jr:detailCell style="Table_TD" height="45">
+                            <box>
+                                <pen lineWidth="0.25" lineColor="#D1CDCD"/>
+                                <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                            </box>
+                            <textField>
+                                <reportElement x="0" y="0" width="59" height="45" forecolor="#303B4A" uuid="4e044580-bc93-4c8b-97af-96cd67c7eaf9">
+                                    <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+                                    <property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+                                </reportElement>
+                                <box>
+                                    <topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                </box>
+                                <textElement textAlignment="Left" verticalAlignment="Middle">
+                                    <font fontName="Nunito"/>
+                                    <paragraph leftIndent="0" rightIndent="5"/>
+                                </textElement>
+                                <textFieldExpression><![CDATA[$F{first}]]></textFieldExpression>
+                            </textField>
+                        </jr:detailCell>
+                    </jr:column>
+                    <jr:column width="71" uuid="b6a69ca9-af7c-4ebc-87b0-a7fdec101225">
+                        <property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+                        <jr:tableHeader style="Table_TH" height="45" rowSpan="1">
+                            <box>
+                                <pen lineWidth="0.25" lineColor="#D1CDCD"/>
+                                <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                            </box>
+                            <staticText>
+                                <reportElement x="0" y="0" width="71" height="45" forecolor="#0057E7" uuid="dbe00594-5cf7-4598-bd15-82b711de6b6f"/>
+                                <box>
+                                    <topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                </box>
+                                <textElement textAlignment="Left" verticalAlignment="Middle">
+                                    <font fontName="Nunito"/>
+                                </textElement>
+                                <text><![CDATA[Deskripsi Transaksi]]></text>
+                            </staticText>
+                        </jr:tableHeader>
+                        <jr:detailCell style="Table_TD" height="45">
+                            <box>
+                                <pen lineWidth="0.25" lineColor="#D1CDCD"/>
+                                <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                            </box>
+                            <textField>
+                                <reportElement x="0" y="0" width="71" height="45" forecolor="#303B4A" uuid="2f49394d-6f5b-4435-8703-12ea1dfcc584"/>
+                                <box>
+                                    <topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                </box>
+                                <textElement textAlignment="Left" verticalAlignment="Middle">
+                                    <font fontName="Nunito"/>
+                                    <paragraph leftIndent="0" rightIndent="5"/>
+                                </textElement>
+                                <textFieldExpression><![CDATA[$F{middle}]]></textFieldExpression>
+                            </textField>
+                        </jr:detailCell>
+                    </jr:column>
+                    <jr:column width="70" uuid="79a23b77-f525-4c3c-9e2e-e728994965d9">
+                        <property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+                        <jr:tableHeader style="Table_TH" height="45" rowSpan="1">
+                            <box>
+                                <pen lineWidth="0.25" lineColor="#D1CDCD"/>
+                                <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                            </box>
+                            <staticText>
+                                <reportElement x="0" y="0" width="70" height="45" forecolor="#0057E7" uuid="ac5a56ce-1a50-4d3d-b0a2-4384a98365e7"/>
+                                <box>
+                                    <topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                </box>
+                                <textElement textAlignment="Left" verticalAlignment="Middle">
+                                    <font fontName="Nunito"/>
+                                </textElement>
+                                <text><![CDATA[ID Teller]]></text>
+                            </staticText>
+                        </jr:tableHeader>
+                        <jr:detailCell style="Table_TD" height="45">
+                            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                            <box>
+                                <pen lineWidth="0.25" lineColor="#D1CDCD"/>
+                                <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                            </box>
+                            <textField>
+                                <reportElement x="0" y="0" width="70" height="45" forecolor="#303B4A" uuid="d6b79064-e118-4263-b640-d2cde7a3a21e">
+                                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                                </reportElement>
+                                <box>
+                                    <topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                </box>
+                                <textElement textAlignment="Left" verticalAlignment="Middle">
+                                    <font fontName="Nunito"/>
+                                    <paragraph leftIndent="0" rightIndent="5"/>
+                                </textElement>
+                                <textFieldExpression><![CDATA[$F{last}]]></textFieldExpression>
+                            </textField>
+                        </jr:detailCell>
+                    </jr:column>
+                    <jr:column width="60" uuid="9545c560-0198-47c6-94bc-7f7eba011dad">
+                        <property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
+                        <jr:tableHeader style="Table_TH" height="45" rowSpan="1">
+                            <box>
+                                <pen lineWidth="0.25" lineColor="#D1CDCD"/>
+                                <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                            </box>
+                            <staticText>
+                                <reportElement x="0" y="0" width="60" height="45" forecolor="#0057E7" uuid="ec4d7adf-032a-46e3-9493-1789b8d0e5a4"/>
+                                <box>
+                                    <topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                </box>
+                                <textElement textAlignment="Left" verticalAlignment="Middle">
+                                    <font fontName="Nunito"/>
+                                </textElement>
+                                <text><![CDATA[Nomor Journal]]></text>
+                            </staticText>
+                        </jr:tableHeader>
+                        <jr:detailCell style="Table_TD" height="45">
+                            <box>
+                                <pen lineWidth="0.25" lineColor="#D1CDCD"/>
+                                <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                            </box>
+                            <textField>
+                                <reportElement x="0" y="0" width="60" height="45" forecolor="#303B4A" uuid="1dc4ae7b-045a-414b-8b83-3b54efa9dd00">
+                                    <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+                                    <property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+                                </reportElement>
+                                <box>
+                                    <topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                </box>
+                                <textElement textAlignment="Left" verticalAlignment="Middle">
+                                    <font fontName="Nunito"/>
+                                    <paragraph leftIndent="0" rightIndent="5"/>
+                                </textElement>
+                                <textFieldExpression><![CDATA["123664757662626"]]></textFieldExpression>
+                            </textField>
+                        </jr:detailCell>
+                    </jr:column>
+                    <jr:column width="119" uuid="4f7c884b-62ef-4681-b3af-11a10569522b">
+                        <property name="com.jaspersoft.studio.components.table.model.column.name" value="Column5"/>
+                        <jr:tableHeader style="Table_TH" height="45" rowSpan="1">
+                            <box>
+                                <pen lineWidth="0.25" lineColor="#D1CDCD"/>
+                                <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                            </box>
+                            <staticText>
+                                <reportElement x="0" y="0" width="119" height="45" forecolor="#0057E7" uuid="7f3e7513-70c1-46c1-b518-4e8d7a9f71e0"/>
+                                <box>
+                                    <topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                </box>
+                                <textElement textAlignment="Left" verticalAlignment="Middle">
+                                    <font fontName="Nunito"/>
+                                </textElement>
+                                <text><![CDATA[Nomor Referensi Transaksi]]></text>
+                            </staticText>
+                        </jr:tableHeader>
+                        <jr:detailCell style="Table_TD" height="45">
+                            <box>
+                                <pen lineWidth="0.25" lineColor="#D1CDCD"/>
+                                <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                            </box>
+                            <textField>
+                                <reportElement x="0" y="0" width="119" height="45" forecolor="#303B4A" uuid="f5b0c10c-b997-4e90-b4f7-d46c8ed90fae">
+                                    <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+                                    <property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+                                </reportElement>
+                                <box>
+                                    <topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                </box>
+                                <textElement verticalAlignment="Middle">
+                                    <font fontName="Nunito"/>
+                                    <paragraph leftIndent="0" rightIndent="5"/>
+                                </textElement>
+                                <textFieldExpression><![CDATA["66736266251123545"]]></textFieldExpression>
+                            </textField>
+                        </jr:detailCell>
+                    </jr:column>
+                    <jr:column width="91" uuid="114a7fc1-e7b6-4e10-af14-ae0531449126">
+                        <property name="com.jaspersoft.studio.components.table.model.column.name" value="Column6"/>
+                        <jr:tableHeader style="Table_TH" height="45" rowSpan="1">
+                            <box>
+                                <pen lineWidth="0.25" lineColor="#D1CDCD"/>
+                                <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                            </box>
+                            <staticText>
+                                <reportElement x="0" y="0" width="91" height="45" forecolor="#0057E7" uuid="e8825393-b527-411e-a01e-e87d269bd5a5"/>
+                                <box>
+                                    <topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                </box>
+                                <textElement textAlignment="Left" verticalAlignment="Middle">
+                                    <font fontName="Nunito"/>
+                                </textElement>
+                                <text><![CDATA[Tanggal/Jam Transaksi]]></text>
+                            </staticText>
+                        </jr:tableHeader>
+                        <jr:detailCell style="Table_TD" height="45">
+                            <box>
+                                <pen lineWidth="0.25" lineColor="#D1CDCD"/>
+                                <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                            </box>
+                            <textField>
+                                <reportElement x="0" y="0" width="91" height="45" forecolor="#303B4A" uuid="49c1f645-4769-4e9b-8c7f-70924bb3e23b"/>
+                                <box>
+                                    <topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                </box>
+                                <textElement textAlignment="Left" verticalAlignment="Middle">
+                                    <font fontName="Nunito"/>
+                                    <paragraph leftIndent="0" rightIndent="5"/>
+                                </textElement>
+                                <textFieldExpression><![CDATA["06/10/2021 08:41:52AM"]]></textFieldExpression>
+                            </textField>
+                        </jr:detailCell>
+                    </jr:column>
+                    <jr:column width="70" uuid="4a6c7cc9-639e-48a4-b773-a236ea3950f4">
+                        <property name="com.jaspersoft.studio.components.table.model.column.name" value="Column7"/>
+                        <jr:tableHeader style="Table_TH" height="45" rowSpan="1">
+                            <box>
+                                <pen lineWidth="0.25" lineColor="#D1CDCD"/>
+                                <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                            </box>
+                            <staticText>
+                                <reportElement x="0" y="0" width="70" height="45" forecolor="#0057E7" uuid="2a905735-7a30-457b-892b-2a81ab58aa49"/>
+                                <box>
+                                    <topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                </box>
+                                <textElement textAlignment="Left" verticalAlignment="Middle">
+                                    <font fontName="Nunito"/>
+                                </textElement>
+                                <text><![CDATA[Dari Nomor Rekening]]></text>
+                            </staticText>
+                        </jr:tableHeader>
+                        <jr:detailCell style="Table_TD" height="45">
+                            <box>
+                                <pen lineWidth="0.25" lineColor="#D1CDCD"/>
+                                <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                            </box>
+                            <textField>
+                                <reportElement x="0" y="0" width="70" height="45" forecolor="#4F555E" uuid="08a44e01-08fb-4312-a013-56e1e521a13d"/>
+                                <box>
+                                    <topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                </box>
+                                <textElement textAlignment="Left" verticalAlignment="Middle">
+                                    <font fontName="Nunito"/>
+                                    <paragraph leftIndent="0" rightIndent="5"/>
+                                </textElement>
+                                <textFieldExpression><![CDATA["N/A"]]></textFieldExpression>
+                            </textField>
+                        </jr:detailCell>
+                    </jr:column>
+                    <jr:column width="50" uuid="9f97b793-95af-4869-86ca-866024c44295">
+                        <property name="com.jaspersoft.studio.components.table.model.column.name" value="Column8"/>
+                        <jr:tableHeader style="Table_TH" height="45" rowSpan="1">
+                            <box>
+                                <pen lineWidth="0.25" lineColor="#D1CDCD"/>
+                                <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                            </box>
+                            <staticText>
+                                <reportElement x="0" y="0" width="50" height="45" forecolor="#0057E7" uuid="4d76443e-69ea-439f-8768-fb3da92e093f"/>
+                                <box>
+                                    <topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                </box>
+                                <textElement textAlignment="Left" verticalAlignment="Middle">
+                                    <font fontName="Nunito"/>
+                                </textElement>
+                                <text><![CDATA[Ke Nomor Rekening]]></text>
+                            </staticText>
+                        </jr:tableHeader>
+                        <jr:detailCell style="Table_TD" height="45">
+                            <box>
+                                <pen lineWidth="0.25" lineColor="#D1CDCD"/>
+                                <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                            </box>
+                            <textField>
+                                <reportElement x="0" y="0" width="50" height="45" forecolor="#303B4A" uuid="7f4796a7-06df-4668-9955-bbb4aa4117e8"/>
+                                <box>
+                                    <topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                </box>
+                                <textElement textAlignment="Left" verticalAlignment="Middle">
+                                    <font fontName="Nunito"/>
+                                    <paragraph leftIndent="0" rightIndent="5"/>
+                                </textElement>
+                                <textFieldExpression><![CDATA["195-116-03"]]></textFieldExpression>
+                            </textField>
+                        </jr:detailCell>
+                    </jr:column>
+                    <jr:column width="60" uuid="ad35404a-1c0b-4d1d-99fd-66ee273beaf1">
+                        <property name="com.jaspersoft.studio.components.table.model.column.name" value="Column9"/>
+                        <jr:tableHeader style="Table_TH" height="45" rowSpan="1">
+                            <box>
+                                <pen lineWidth="0.25" lineColor="#D1CDCD"/>
+                                <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                            </box>
+                            <staticText>
+                                <reportElement x="0" y="0" width="60" height="45" forecolor="#0057E7" uuid="ee6f4c90-643a-49b8-8cec-bdb051c79bb0"/>
+                                <box>
+                                    <topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                </box>
+                                <textElement textAlignment="Left" verticalAlignment="Middle">
+                                    <font fontName="Nunito"/>
+                                </textElement>
+                                <text><![CDATA[ID Supervisor (Approver)]]></text>
+                            </staticText>
+                        </jr:tableHeader>
+                        <jr:detailCell style="Table_TD" height="45">
+                            <box>
+                                <pen lineWidth="0.25" lineColor="#D1CDCD"/>
+                                <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                            </box>
+                            <textField>
+                                <reportElement x="0" y="0" width="60" height="45" forecolor="#303B4A" uuid="23256520-cc80-453a-bb0b-d76cf6e10f90"/>
+                                <box>
+                                    <topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                </box>
+                                <textElement textAlignment="Left" verticalAlignment="Middle">
+                                    <font fontName="Nunito"/>
+                                    <paragraph leftIndent="0" rightIndent="5"/>
+                                </textElement>
+                                <textFieldExpression><![CDATA["GB0072773"]]></textFieldExpression>
+                            </textField>
+                        </jr:detailCell>
+                    </jr:column>
+                    <jr:column width="91" uuid="21114359-f5d9-483e-89fe-ca33a69880c4">
+                        <property name="com.jaspersoft.studio.components.table.model.column.name" value="Column10"/>
+                        <jr:tableHeader style="Table_TH" height="45" rowSpan="1">
+                            <box>
+                                <pen lineWidth="0.25" lineColor="#D1CDCD"/>
+                                <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                            </box>
+                            <staticText>
+                                <reportElement x="0" y="0" width="91" height="45" forecolor="#0057E7" uuid="f73dd120-c77f-4aba-974b-f44b139ec3e0"/>
+                                <box>
+                                    <topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                </box>
+                                <textElement textAlignment="Left" verticalAlignment="Middle">
+                                    <font fontName="Nunito"/>
+                                </textElement>
+                                <text><![CDATA[Nilai Transaksi]]></text>
+                            </staticText>
+                        </jr:tableHeader>
+                        <jr:detailCell style="Table_TD" height="45">
+                            <box>
+                                <pen lineWidth="0.25" lineColor="#D1CDCD"/>
+                                <topPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+                                <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                            </box>
+                            <textField>
+                                <reportElement x="0" y="0" width="91" height="45" forecolor="#303B4A" uuid="d0154b01-4b0a-4e1b-bbbb-79f2b5f0be30"/>
+                                <box>
+                                    <topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                    <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                                </box>
+                                <textElement textAlignment="Left" verticalAlignment="Middle">
+                                    <font fontName="Nunito"/>
+                                    <paragraph leftIndent="0" rightIndent="5"/>
+                                </textElement>
+                                <textFieldExpression><![CDATA["500.000.000,00"]]></textFieldExpression>
+                            </textField>
+                        </jr:detailCell>
+                    </jr:column>
+                </jr:table>
+            </componentElement>
+        </band>
+    </detail>
+</jasperReport>
