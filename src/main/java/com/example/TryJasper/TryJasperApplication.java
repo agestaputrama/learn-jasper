@@ -47,21 +47,21 @@ public class TryJasperApplication {
 			listOfChild.add(dummyData);
 		}
 
-		//data utama
-		JRBeanCollectionDataSource dataSourceParent = new JRBeanCollectionDataSource(listOfParent);
-
-		//data dalam tabel
-		JRBeanCollectionDataSource dataSourceChild = new JRBeanCollectionDataSource(listOfChild);
-
-		//set parameter utk tabel
-		Map<String, Object> parameters = new HashMap<>();
-		parameters.put("CollectionBeanParameter", dataSourceChild);
-
-		System.out.println(dataSourceChild.getRecordCount()+" jumlah data tabel");
-
 		try {
 
-			InputStream input = new FileInputStream(new File("C:\\Users\\C090821002\\Downloads\\TryJasper\\src\\main\\resources\\jasper.jrxml"));
+			//data utama
+			JRBeanCollectionDataSource dataSourceParent = new JRBeanCollectionDataSource(listOfParent);
+
+			//data dalam tabel
+			JRBeanCollectionDataSource dataSourceChild = new JRBeanCollectionDataSource(listOfChild);
+
+			//set parameter utk tabel
+			Map<String, Object> parameters = new HashMap<>();
+			parameters.put("CollectionBeanParameter", dataSourceChild);
+
+			System.out.println(dataSourceChild.getRecordCount()+" jumlah data tabel");
+
+			InputStream input = getClass().getResourceAsStream("/templates/jasper.jrxml");
 			JasperDesign jasperDesign = JRXmlLoader.load(input);
 
 			String path = "C:\\Users\\C090821002\\Downloads";
